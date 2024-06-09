@@ -19,7 +19,13 @@ langDict = {
         "What new \nin SerOS?":"ما الجديد \nفي SerOS؟",
         "Your PC isn't needing to update now":"جهاز الكمبيوتر الخاص بك لا يحتاج إلى تحديث الآن",
         "User of PC":"مستخدم جهاز الكمبيوتر",
-        "Open a program in PC":"فتح برنامج في جهاز الكمبيوتر"
+        "Open a program in PC":"فتح برنامج في جهاز الكمبيوتر",
+        "Add": "إضافة",
+        "Remove": "إزالة",
+        "Open": "فتح",
+        "Play": "تشغيل",
+        "Stop": "توقف",
+        "List": "قائمة"
     },
     "hy_AM":{
         "Home":"Գլխավոր էջ",
@@ -41,7 +47,13 @@ langDict = {
         "What new \nin SerOS?":"Ինչ նոր \nSerOS-ում?",
         "Your PC isn't needing to update now":"Ձեր համակարգչին հիմա թարմացում չի պահանջվում",
         "User of PC":"Համակարգչի օգտագործող",
-        "Open a program in PC":"Բացել ծրագիր համակարգչում"
+        "Open a program in PC":"Բացել ծրագիր համակարգչում",
+        "Add": "Ավելացնել",
+        "Remove": "Հեռացնել",
+        "Open": "Բացել",
+        "Play": "Համարձակել",
+        "Stop": "Դադարեցնել",
+        "List": "Ցուցակ"
     },
     "az_AZ":{
         "Home":"Ana səhifə",
@@ -63,7 +75,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS-da nə yeni var?",
         "Your PC isn't needing to update now":"Sizin PC-niz indi yeniləməyə ehtiyacı yoxdur",
         "User of PC":"PC istifadəçisi",
-        "Open a program in PC":"PC-də proqramı aç"
+        "Open a program in PC":"PC-də proqramı aç",
+        "Add": "Əlavə et",
+        "Remove": "Sil",
+        "Open": "Aç",
+        "Play": "Oynat",
+        "Stop": "Dayandır",
+        "List": "Siyahı"
     },
     "bg_BG":{
         "Home":"Начало",
@@ -85,7 +103,13 @@ langDict = {
         "What new \nin SerOS?":"Какво ново в SerOS?",
         "Your PC isn't needing to update now":"Вашият компютър в момента не се нуждае от актуализация",
         "User of PC":"Потребител на компютъра",
-        "Open a program in PC":"Отваряне на програма в компютъра"
+        "Open a program in PC":"Отваряне на програма в компютъра",
+        "Add": "Добави",
+        "Remove": "Премахни",
+        "Open": "Отвори",
+        "Play": "Пусни",
+        "Stop": "Спри",
+        "List": "Списък"
     },
     "zh_CN":{
         "Home":"主页",
@@ -107,7 +131,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS有什么新功能？",
         "Your PC isn't needing to update now":"您的计算机现在不需要更新",
         "User of PC":"计算机用户",
-        "Open a program in PC":"在计算机中打开程序"
+        "Open a program in PC":"在计算机中打开程序",
+        "Add": "添加",
+        "Remove": "移除",
+        "Open": "打开",
+        "Play": "播放",
+        "Stop": "停止",
+        "List": "列表"
     },
     "zh_TW":{
         "Home":"首頁",
@@ -129,7 +159,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS有什麼新功能？",
         "Your PC isn't needing to update now":"您的電腦目前不需要更新",
         "User of PC":"電腦使用者",
-        "Open a program in PC":"在電腦上開啟程式"
+        "Open a program in PC":"在電腦上開啟程式",
+        "Add": "新增",
+        "Remove": "移除",
+        "Open": "開啟",
+        "Play": "播放",
+        "Stop": "停止",
+        "List": "清單"
     },
     "hr_HR":{
         "Home":"Početna",
@@ -151,7 +187,13 @@ langDict = {
         "What new \nin SerOS?":"Što je novo u SerOS-u?",
         "Your PC isn't needing to update now":"Vaše računalo trenutno ne treba ažuriranje",
         "User of PC":"Korisnik računala",
-        "Open a program in PC":"Otvori program na računalu"
+        "Open a program in PC":"Otvori program na računalu",
+        "Add": "Dodaj",
+        "Remove": "Ukloni",
+        "Open": "Otvori",
+        "Play": "Reproduciraj",
+        "Stop": "Zaustavi",
+        "List": "Popis"
     },
     "cs_CZ":{
         "Home":"Domů",
@@ -173,7 +215,13 @@ langDict = {
         "What new \nin SerOS?":"Co je nového v SerOS?",
         "Your PC isn't needing to update now":"Váš počítač v tuto chvíli nepotřebuje aktualizaci",
         "User of PC":"Uživatel počítače",
-        "Open a program in PC":"Otevřít program v počítači"
+        "Open a program in PC":"Otevřít program v počítači",
+        "Add": "Přidat",
+        "Remove": "Odebrat",
+        "Open": "Otevřít",
+        "Play": "Přehrát",
+        "Stop": "Zastavit",
+        "List": "Seznam"
     },
     "da_DK":{
         "Home":"Hjem",
@@ -195,7 +243,13 @@ langDict = {
         "What new \nin SerOS?":"Hvad er nyt i SerOS?",
         "Your PC isn't needing to update now":"Din computer behøver ikke opdatering lige nu",
         "User of PC":"Bruger af computer",
-        "Open a program in PC":"Åbn et program på computeren"
+        "Open a program in PC":"Åbn et program på computeren",
+        "Add": "Tilføj",
+        "Remove": "Fjern",
+        "Open": "Åbn",
+        "Play": "Afspil",
+        "Stop": "Stop",
+        "List": "Liste"
     },
     "nl_NL":{
         "Home":"Home",
@@ -217,7 +271,13 @@ langDict = {
         "What new \nin SerOS?":"Wat is er nieuw in SerOS?",
         "Your PC isn't needing to update now":"Uw computer heeft nu geen update nodig",
         "User of PC":"Gebruiker van de computer",
-        "Open a program in PC":"Een programma openen op de computer"
+        "Open a program in PC":"Een programma openen op de computer",
+        "Add": "Toevoegen",
+        "Remove": "Verwijderen",
+        "Open": "Openen",
+        "Play": "Afspelen",
+        "Stop": "Stoppen",
+        "List": "Lijst"
     },
     "en_US":{
         "Home":"Home",
@@ -239,7 +299,13 @@ langDict = {
         "What new \nin SerOS?":"What new \nin SerOS?",
         "Your PC isn't needing to update now":"Your PC isn't needing to update now",
         "User of PC":"User of PC",
-        "Open a program in PC":"Open a program in PC"
+        "Open a program in PC":"Open a program in PC",
+        "Add":"Add",
+        "Remove":"Remove",
+        "Open":"Open",
+        "Play":"Play",
+        "Stop":"Stop",
+        "List":"List"
     },
     "en_GB":{
         "Home":"Home",
@@ -261,7 +327,13 @@ langDict = {
         "What new \nin SerOS?":"What new \nin SerOS?",
         "Your PC isn't needing to update now":"Your PC isn't needing to update now",
         "User of PC":"User of PC",
-        "Open a program in PC":"Open a program in PC"
+        "Open a program in PC":"Open a program in PC",
+        "Add":"Add",
+        "Remove":"Remove",
+        "Open":"Open",
+        "Play":"Play",
+        "Stop":"Stop",
+        "List":"List"
     },
     "en_CA":{
         "Home":"Home",
@@ -283,7 +355,13 @@ langDict = {
         "What new \nin SerOS?":"What new \nin SerOS?",
         "Your PC isn't needing to update now":"Your PC isn't needing to update now",
         "User of PC":"User of PC",
-        "Open a program in PC":"Open a program in PC"
+        "Open a program in PC":"Open a program in PC",
+        "Add":"Add",
+        "Remove":"Remove",
+        "Open":"Open",
+        "Play":"Play",
+        "Stop":"Stop",
+        "List":"List"
     },
     "en_AU":{
         "Home":"Home",
@@ -305,7 +383,13 @@ langDict = {
         "What new \nin SerOS?":"What new \nin SerOS?",
         "Your PC isn't needing to update now":"Your PC isn't needing to update now",
         "User of PC":"User of PC",
-        "Open a program in PC":"Open a program in PC"
+        "Open a program in PC":"Open a program in PC",
+        "Add":"Add",
+        "Remove":"Remove",
+        "Open":"Open",
+        "Play":"Play",
+        "Stop":"Stop",
+        "List":"List"
     },
     "et_EE":{
         "Home":"Avaleht",
@@ -327,7 +411,13 @@ langDict = {
         "What new \nin SerOS?":"Mis on uut SerOS-is?",
         "Your PC isn't needing to update now":"Teie arvuti ei vaja hetkel uuendamist",
         "User of PC":"Arvuti kasutaja",
-        "Open a program in PC":"Ava programm arvutis"
+        "Open a program in PC":"Ava programm arvutis",
+        "Add": "Lisa",
+        "Remove": "Eemalda",
+        "Open": "Ava",
+        "Play": "Mängi",
+        "Stop": "Stopp",
+        "List": "Nimekiri"
     },
     "fi_FI":{
         "Home":"Koti",
@@ -349,7 +439,13 @@ langDict = {
         "What new \nin SerOS?":"Mitä uutta SerOS:ssa?",
         "Your PC isn't needing to update now":"Tietokoneesi ei tarvitse päivitystä tällä hetkellä",
         "User of PC":"Tietokoneen käyttäjä",
-        "Open a program in PC":"Avaa ohjelma tietokoneessa"
+        "Open a program in PC":"Avaa ohjelma tietokoneessa",
+        "Add": "Lisää",
+        "Remove": "Poista",
+        "Open": "Avaa",
+        "Play": "Toista",
+        "Stop": "Pysäytä",
+        "List": "Lista"
     },
     "fr_FR":{
         "Home":"Accueil",
@@ -371,7 +467,13 @@ langDict = {
         "What new \nin SerOS?":"Quoi de nouveau dans SerOS?",
         "Your PC isn't needing to update now":"Votre ordinateur n'a pas besoin de mise à jour pour l'instant",
         "User of PC":"Utilisateur de l'ordinateur",
-        "Open a program in PC":"Ouvrir un programme sur l'ordinateur"
+        "Open a program in PC":"Ouvrir un programme sur l'ordinateur",
+        "Add": "Ajouter",
+        "Remove": "Supprimer",
+        "Open": "Ouvrir",
+        "Play": "Jouer",
+        "Stop": "Arrêter",
+        "List": "Liste"
     },
     "fr_CA":{
         "Home":"Accueil",
@@ -393,7 +495,13 @@ langDict = {
         "What new \nin SerOS?":"Quoi de nouveau dans SerOS?",
         "Your PC isn't needing to update now":"Votre ordinateur n'a pas besoin de mise à jour pour l'instant",
         "User of PC":"Utilisateur de l'ordinateur",
-        "Open a program in PC":"Ouvrir un programme sur l'ordinateur"
+        "Open a program in PC":"Ouvrir un programme sur l'ordinateur",
+        "Add": "Ajouter",
+        "Remove": "Retirer",
+        "Open": "Ouvrir",
+        "Play": "Jouer",
+        "Stop": "Arrêter",
+        "List": "Liste"
     },
     "ka_GE":{
         "Home":"მთავარი",
@@ -415,7 +523,13 @@ langDict = {
         "What new \nin SerOS?":"რა ახალია SerOS-ში?",
         "Your PC isn't needing to update now":"თქვენი კომპიუტერი ამჟამად არ სჭირდება განახლება",
         "User of PC":"კომპიუტერის მომხმარე",
-        "Open a program in PC":"პროგრამას გახსნა კომპიუტერში"
+        "Open a program in PC":"პროგრამას გახსნა კომპიუტერში",
+        "Add": "დამატება",
+        "Remove": "წაშლა",
+        "Open": "გახსნა",
+        "Play": "დაიწყე",
+        "Stop": "შეჩერება",
+        "List": "სია"
     },
     "de_DE":{
         "Home":"Startseite",
@@ -437,7 +551,13 @@ langDict = {
         "What new \nin SerOS?":"Was ist neu in SerOS?",
         "Your PC isn't needing to update now":"Ihr PC benötigt derzeit keine Aktualisierung",
         "User of PC":"Benutzer des PCs",
-        "Open a program in PC":"Ein Programm auf dem PC öffnen"
+        "Open a program in PC":"Ein Programm auf dem PC öffnen",
+        "Add": "Hinzufügen",
+        "Remove": "Entfernen",
+        "Open": "Öffnen",
+        "Play": "Abspielen",
+        "Stop": "Stopp",
+        "List": "Liste"
     },
     "el_GR":{
         "Home":"Αρχική",
@@ -459,7 +579,13 @@ langDict = {
         "What new \nin SerOS?":"Τι νέο υπάρχει στο SerOS;",
         "Your PC isn't needing to update now":"Ο υπολογιστής σας δεν χρειάζεται ενημέρωση αυτή τη στιγμή",
         "User of PC":"Χρήστης υπολογιστή",
-        "Open a program in PC":"Άνοιγμα προγράμματος στον υπολογιστή"
+        "Open a program in PC":"Άνοιγμα προγράμματος στον υπολογιστή",
+        "Add": "Προσθήκη",
+        "Remove": "Αφαίρεση",
+        "Open": "Άνοιγμα",
+        "Play": "Αναπαραγωγή",
+        "Stop": "Διακοπή",
+        "List": "Λίστα"
     },
     "he_IL":{
         "Home":"בית",
@@ -481,7 +607,13 @@ langDict = {
         "What new \nin SerOS?":"מה חדש ב-SerOS?",
         "Your PC isn't needing to update now":"המחשב שלך אינו זקוק לעדכון כרגע",
         "User of PC":"משתמש במחשב",
-        "Open a program in PC":"פתיחת תוכנית במחשב"
+        "Open a program in PC":"פתיחת תוכנית במחשב",
+        "Add": "הוסף",
+        "Remove": "הסר",
+        "Open": "פתח",
+        "Play": "נגן",
+        "Stop": "עצור",
+        "List": "רשימה"
     },
     "hi_IN":{
         "Home":"मुख्य पृष्ठ",
@@ -503,7 +635,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS में क्या नया है?",
         "Your PC isn't needing to update now":"आपका PC अभी अपडेट की जरूरत नहीं है",
         "User of PC":"PC का उपयोगकर्ता",
-        "Open a program in PC":"PC में प्रोग्राम खोलें"
+        "Open a program in PC":"PC में प्रोग्राम खोलें",
+        "Add": "जोड़ें",
+        "Remove": "हटाएं",
+        "Open": "खोलें",
+        "Play": "चलाएं",
+        "Stop": "रोकें",
+        "List": "सूची"
     },
     "hu_HU":{
         "Home":"Kezdőlap",
@@ -525,7 +663,13 @@ langDict = {
         "What new \nin SerOS?":"Mi új a SerOS-ban?",
         "Your PC isn't needing to update now":"A számítógépének most nincs szüksége frissítésre",
         "User of PC":"A számítógép felhasználója",
-        "Open a program in PC":"Program megnyitása a számítógépen"
+        "Open a program in PC":"Program megnyitása a számítógépen",
+        "Add": "Hozzáadás",
+        "Remove": "Eltávolítás",
+        "Open": "Megnyitás",
+        "Play": "Lejátszás",
+        "Stop": "Megállítás",
+        "List": "Lista"
     },
     "it_IT":{
         "Home":"Home",
@@ -547,7 +691,13 @@ langDict = {
         "What new \nin SerOS?":"Cosa c'è di nuovo in SerOS?",
         "Your PC isn't needing to update now":"Il tuo PC non ha bisogno di aggiornamenti al momento",
         "User of PC":"Utente del PC",
-        "Open a program in PC":"Apri un programma sul PC"
+        "Open a program in PC":"Apri un programma sul PC",
+        "Add": "Aggiungi",
+        "Remove": "Rimuovi",
+        "Open": "Apri",
+        "Play": "Riproduci",
+        "Stop": "Stop",
+        "List": "Lista"
     },
     "ja_JP":{
         "Home":"ホーム",
@@ -569,7 +719,13 @@ langDict = {
         "What new \nin SerOS?":"SerOSの新機能は？",
         "Your PC isn't needing to update now":"現在、PCの更新は必要ありません",
         "User of PC":"PCのユーザー",
-        "Open a program in PC":"PCでプログラムを開く"
+        "Open a program in PC":"PCでプログラムを開く",
+        "Add": "追加",
+        "Remove": "削除",
+        "Open": "開く",
+        "Play": "再生",
+        "Stop": "停止",
+        "List": "リスト"
     },
     "kk_KZ":{
         "Home":"Басты бет",
@@ -591,7 +747,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS-та не жаңа бар?",
         "Your PC isn't needing to update now":"Сіздің компьютеріңіз қазір жаңартуды қажет етпейді",
         "User of PC":"Компьютер пайдаланушысы",
-        "Open a program in PC":"Компьютерде бағдарламаны ашу"
+        "Open a program in PC":"Компьютерде бағдарламаны ашу",
+        "Add": "Қосу",
+        "Remove": "Алау",
+        "Open": "Ашу",
+        "Play": "Ойнату",
+        "Stop": "Тоқтату",
+        "List": "Тізім"
     },
     "ko_KR":{
         "Home":"홈",
@@ -613,7 +775,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS의 새로운 기능은?",
         "Your PC isn't needing to update now":"현재 PC 업데이트가 필요하지 않습니다",
         "User of PC":"PC 사용자",
-        "Open a program in PC":"PC에서 프로그램 열기"
+        "Open a program in PC":"PC에서 프로그램 열기",
+        "Add": "추가",
+        "Remove": "제거",
+        "Open": "열기",
+        "Play": "재생",
+        "Stop": "정지",
+        "List": "목록"
     },
     "ky_KG":{
         "Home":"Башкы бет",
@@ -635,7 +803,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS'то эмнелер жаңы?",
         "Your PC isn't needing to update now":"Компьютериңиз азыр жаңыртууну талап кылбайт",
         "User of PC":"Компьютердин колдонуучусу",
-        "Open a program in PC":"Компьютерде программаны ачуу"
+        "Open a program in PC":"Компьютерде программаны ачуу",
+        "Add": "Кошуу",
+        "Remove": "Өчүрүү",
+        "Open": "Ачуу",
+        "Play": "Ойнотуу",
+        "Stop": "Токтотуу",
+        "List": "Тизме"
     },
     "lv_LV":{
         "Home":"Sākums",
@@ -657,7 +831,13 @@ langDict = {
         "What new \nin SerOS?":"Kas jauns SerOS?",
         "Your PC isn't needing to update now":"Jūsu datoram pašlaik nav nepieciešams atjauninājums",
         "User of PC":"Datora lietotājs",
-        "Open a program in PC":"Atvērt programmu datorā"
+        "Open a program in PC":"Atvērt programmu datorā",
+        "Add": "Pievienot",
+        "Remove": "Noņemt",
+        "Open": "Atvērt",
+        "Play": "Atskaņot",
+        "Stop": "Apturēt",
+        "List": "Saraksts"
     },
     "lt_LT":{
         "Home":"Pradžia",
@@ -679,7 +859,13 @@ langDict = {
         "What new \nin SerOS?":"Kas naujo SerOS?",
         "Your PC isn't needing to update now":"Jūsų kompiuteriui dabar nereikia atnaujinimo",
         "User of PC":"Kompiuterio naudotojas",
-        "Open a program in PC":"Atidaryti programą kompiuteryje"
+        "Open a program in PC":"Atidaryti programą kompiuteryje",
+        "Add": "Pridėti",
+        "Remove": "Pašalinti",
+        "Open": "Atidaryti",
+        "Play": "Paleisti",
+        "Stop": "Sustabdyti",
+        "List": "Sąrašas"
     },
     "mn_MN":{
         "Home":"Нүүр хуудас",
@@ -701,7 +887,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS дээр юу шинэ байна?",
         "Your PC isn't needing to update now":"Таны компьютер одоо шинэчлэх шаардлагагүй байна",
         "User of PC":"Компьютерийн хэрэглэгч",
-        "Open a program in PC":"Программ нээх компьютер"
+        "Open a program in PC":"Программ нээх компьютер",
+        "Add": "Нэмэх",
+        "Remove": "Устгах",
+        "Open": "Нээх",
+        "Play": "Тоглуулах",
+        "Stop": "Зогсоох",
+        "List": "Жагсаалт"
     },
     "fa_IR":{
         "Home":"خانه",
@@ -723,7 +915,13 @@ langDict = {
         "What new \nin SerOS?":"چه خبری در SerOS وجود دارد؟",
         "Your PC isn't needing to update now":"کامپیوتر شما در حال حاضر نیازی به به‌روزرسانی ندارد",
         "User of PC":"کاربر کامپیوتر",
-        "Open a program in PC":"باز کردن یک برنامه در کامپیوتر"
+        "Open a program in PC":"باز کردن یک برنامه در کامپیوتر",
+        "Add": "افزودن",
+        "Remove": "حذف کردن",
+        "Open": "باز کردن",
+        "Play": "پخش",
+        "Stop": "توقف",
+        "List": "فهرست"
     },
     "pl_PL":{
         "Home":"Strona główna",
@@ -745,7 +943,13 @@ langDict = {
         "What new \nin SerOS?":"Co nowego w SerOS?",
         "Your PC isn't needing to update now":"Twój komputer nie wymaga aktualizacji w tej chwili",
         "User of PC":"Użytkownik komputera",
-        "Open a program in PC":"Otwórz program na komputerze"
+        "Open a program in PC":"Otwórz program na komputerze",
+        "Add": "Dodaj",
+        "Remove": "Usuń",
+        "Open": "Otwórz",
+        "Play": "Odtwórz",
+        "Stop": "Zatrzymaj",
+        "List": "Lista"
     },
     "pt_PT":{
         "Home":"Início",
@@ -767,7 +971,13 @@ langDict = {
         "What new \nin SerOS?":"O que há de novo no SerOS?",
         "Your PC isn't needing to update now":"O seu computador não precisa de atualização agora",
         "User of PC":"Utilizador do computador",
-        "Open a program in PC":"Abrir um programa no computador"
+        "Open a program in PC":"Abrir um programa no computador",
+        "Add": "Adicionar",
+        "Remove": "Remover",
+        "Open": "Abrir",
+        "Play": "Reproduzir",
+        "Stop": "Parar",
+        "List": "Lista"
     },
     "pt_BR":{
         "Home":"Início",
@@ -789,7 +999,13 @@ langDict = {
         "What new \nin SerOS?":"O que há de novo no SerOS?",
         "Your PC isn't needing to update now":"Seu computador não precisa de atualização no momento",
         "User of PC":"Usuário do computador",
-        "Open a program in PC":"Abrir um programa no computador"
+        "Open a program in PC":"Abrir um programa no computador",
+        "Add": "Adicionar",
+        "Remove": "Remover",
+        "Open": "Abrir",
+        "Play": "Reproduzir",
+        "Stop": "Parar",
+        "List": "Lista"
     },
     "ro_RO":{
         "Home":"Acasă",
@@ -811,7 +1027,13 @@ langDict = {
         "What new \nin SerOS?":"Ce este nou în SerOS?",
         "Your PC isn't needing to update now":"Calculatorul dvs. nu are nevoie de actualizare acum",
         "User of PC":"Utilizatorul calculatorului",
-        "Open a program in PC":"Deschideți un program în calculator"
+        "Open a program in PC":"Deschideți un program în calculator",
+        "Add": "Adăugare",
+        "Remove": "Eliminare",
+        "Open": "Deschide",
+        "Play": "Redare",
+        "Stop": "Stop",
+        "List": "Listă"
     },
     "ru_RU":{
         "Home":"Главная",
@@ -833,7 +1055,13 @@ langDict = {
         "What new \nin SerOS?":"Что нового в SerOS?",
         "Your PC isn't needing to update now":"Вашему компьютеру сейчас не требуется обновление",
         "User of PC":"Пользователь компьютера",
-        "Open a program in PC":"Открыть программу на компьютере"
+        "Open a program in PC":"Открыть программу на компьютере",
+        "Add": "Добавить",
+        "Remove": "Удалить",
+        "Open": "Открыть",
+        "Play": "Воспроизвести",
+        "Stop": "Остановить",
+        "List": "Список"
     },
     "sr_RS":{
         "Home":"Почетна",
@@ -855,7 +1083,13 @@ langDict = {
         "What new \nin SerOS?":"Шта је ново у SerOS?",
         "Your PC isn't needing to update now":"Вашем рачунару тренутно није потребно ажурирање",
         "User of PC":"Корисник рачунара",
-        "Open a program in PC":"Отвори програм на рачунару"
+        "Open a program in PC":"Отвори програм на рачунару",
+        "Add": "Додај",
+        "Remove": "Уклони",
+        "Open": "Отвори",
+        "Play": "Покрени",
+        "Stop": "Стоп",
+        "List": "Листа"
     },
     "sr_RS_latin":{
         "Home":"Početna",
@@ -877,7 +1111,13 @@ langDict = {
         "What new \nin SerOS?":"Šta je novo u SerOS-u?",
         "Your PC isn't needing to update now":"Vašem računaru trenutno nije potrebno ažuriranje",
         "User of PC":"Korisnik računara",
-        "Open a program in PC":"Otvori program na računaru"
+        "Open a program in PC":"Otvori program na računaru",
+        "Add": "Dodaj",
+        "Remove": "Ukloni",
+        "Open": "Otvori",
+        "Play": "Pokreni",
+        "Stop": "Stop",
+        "List": "Lista"
     },
     "sk_SK":{
         "Home":"Domov",
@@ -899,7 +1139,13 @@ langDict = {
         "What new \nin SerOS?":"Čo je nové v SerOS?",
         "Your PC isn't needing to update now":"Váš počítač v súčasnosti nepotrebuje aktualizáciu",
         "User of PC":"Používateľ počítača",
-        "Open a program in PC":"Otvoriť program v počítači"
+        "Open a program in PC":"Otvoriť program v počítači",
+        "Add": "Pridať",
+        "Remove": "Odstrániť",
+        "Open": "Otvoriť",
+        "Play": "Prehrať",
+        "Stop": "Zastaviť",
+        "List": "Zoznam"
     },
     "sl_SI":{
         "Home":"Domov",
@@ -921,7 +1167,13 @@ langDict = {
         "What new \nin SerOS?":"Kaj je novega v SerOS?",
         "Your PC isn't needing to update now":"Vaš računalnik trenutno ne potrebuje posodobitve",
         "User of PC":"Uporabnik računalnika",
-        "Open a program in PC":"Odpri program v računalniku"
+        "Open a program in PC":"Odpri program v računalniku",
+        "Add": "Dodaj",
+        "Remove": "Odstrani",
+        "Open": "Odpri",
+        "Play": "Predvajaj",
+        "Stop": "Ustavi",
+        "List": "Seznam"
     },
     "es_ES":{
         "Home":"Inicio",
@@ -943,7 +1195,13 @@ langDict = {
         "What new \nin SerOS?":"¿Qué hay de nuevo en SerOS?",
         "Your PC isn't needing to update now":"Tu PC no necesita actualizarse ahora",
         "User of PC":"Usuario del PC",
-        "Open a program in PC":"Abrir un programa en el PC"
+        "Open a program in PC":"Abrir un programa en el PC",
+        "Add": "Agregar",
+        "Remove": "Eliminar",
+        "Open": "Abrir",
+        "Play": "Reproducir",
+        "Stop": "Detener",
+        "List": "Lista"
     },
     "sv_SE":{
         "Home":"Hem",
@@ -965,7 +1223,13 @@ langDict = {
         "What new \nin SerOS?":"Vad är nytt i SerOS?",
         "Your PC isn't needing to update now":"Din dator behöver inte uppdateras just nu",
         "User of PC":"Datoranvändare",
-        "Open a program in PC":"Öppna ett program på datorn"
+        "Open a program in PC":"Öppna ett program på datorn",
+        "Add": "Lägg till",
+        "Remove": "Ta bort",
+        "Open": "Öppna",
+        "Play": "Spela",
+        "Stop": "Stoppa",
+        "List": "Lista"
     },
     "tt_RU":{
         "Home":"Баш бит",
@@ -987,7 +1251,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS'та нәрсә яңа?",
         "Your PC isn't needing to update now":"Хәзерге вакытта сезнең компьютерыгызга яңарту кирәк түгел",
         "User of PC":"Компьютер кулланучысы",
-        "Open a program in PC":"Компьютердә программа ачу"
+        "Open a program in PC":"Компьютердә программа ачу",
+        "Add": "Өстәү",
+        "Remove": "Бетерү",
+        "Open": "Ачу",
+        "Play": "Ойнату",
+        "Stop": "Токтату",
+        "List": "Тизем"
     },
     "th_TH":{
         "Home":"หน้าหลัก",
@@ -1009,7 +1279,13 @@ langDict = {
         "What new \nin SerOS?":"มีอะไรใหม่ใน SerOS?",
         "Your PC isn't needing to update now":"คอมพิวเตอร์ของคุณไม่จำเป็นต้องอัปเดตในขณะนี้",
         "User of PC":"ผู้ใช้คอมพิวเตอร์",
-        "Open a program in PC":"เปิดโปรแกรมในคอมพิวเตอร์"
+        "Open a program in PC":"เปิดโปรแกรมในคอมพิวเตอร์",
+        "Add": "เพิ่ม",
+        "Remove": "ลบ",
+        "Open": "เปิด",
+        "Play": "เล่น",
+        "Stop": "หยุด",
+        "List": "รายการ"
     },
     "bo_CN":{
         "Home":"གདོང་ཤོག",
@@ -1031,7 +1307,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS ནང་གི་གསར་པ་ཅི་ཡོད།",
         "Your PC isn't needing to update now":"ཁྱོད་ཀྱི་འགོག་རྟགས་ལ་ད་ལྟ་སྱིན་བཅོས་དགོས་མི་དགོས།",
         "User of PC":"འགོག་རྟགས་ཀྱི་སྤྱོད་མཁན།",
-        "Open a program in PC":"འགོག་རྟགས་ནང་ལས་རིམ་ཞིག་ཁ་ཕྱེ་བ།"
+        "Open a program in PC":"འགོག་རྟགས་ནང་ལས་རིམ་ཞིག་ཁ་ཕྱེ་བ།",
+        "Add": "བཙལ་བ",
+        "Remove": "བཏོན་བ",
+        "Open": "བརྟེན་བ",
+        "Play": "ཕོད་སྡོམ་བ",
+        "Stop": "རིམ་བཏགས་པ",
+        "List": "ཐོག་གཅོད།"
     },
     "tr_TR":{
         "Home":"Ana Sayfa",
@@ -1053,7 +1335,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS'ta neler yeni?",
         "Your PC isn't needing to update now":"Bilgisayarınız şu anda güncellemeye ihtiyaç duymuyor",
         "User of PC":"Bilgisayar kullanıcısı",
-        "Open a program in PC":"Bilgisayarda bir program aç"
+        "Open a program in PC":"Bilgisayarda bir program aç",
+        "Add": "Ekle",
+        "Remove": "Kaldır",
+        "Open": "Aç",
+        "Play": "Oynat",
+        "Stop": "Dur",
+        "List": "Liste"
     },
     "tk_TM":{
         "Home":"Baş Sahypa",
@@ -1075,7 +1363,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS-da näme täze?",
         "Your PC isn't needing to update now":"Bilgisunyňyz şu wagtda täzelenmäge ihtiyaryok",
         "User of PC":"Bilgisun ulanyjysy",
-        "Open a program in PC":"Bilgisunyňda programma aç"
+        "Open a program in PC":"Bilgisunyňda programma aç",
+        "Add": "Goşmak",
+        "Remove": "Aýyrmak",
+        "Open": "Açmak",
+        "Play": "Oýnamak",
+        "Stop": "Durdurmak",
+        "List": "Sanaw"
     },
     "uk_UA":{
         "Home":"Головна",
@@ -1097,7 +1391,13 @@ langDict = {
         "What new \nin SerOS?":"Що нового в SerOS?",
         "Your PC isn't needing to update now":"Вашому комп'ютеру зараз не потрібно оновлення",
         "User of PC":"Користувач комп'ютера",
-        "Open a program in PC":"Відкрити програму на комп'ютері"
+        "Open a program in PC":"Відкрити програму на комп'ютері",
+        "Add": "Додати",
+        "Remove": "Видалити",
+        "Open": "Відкрити",
+        "Play": "Відтворити",
+        "Stop": "Зупинити",
+        "List": "Список"
     },
     "ur_PK":{
         "Home":"ہوم",
@@ -1119,7 +1419,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS میں کیا نیا ہے؟",
         "Your PC isn't needing to update now":"آپ کے کمپیوٹر کو اب اپ ڈیٹ کی ضرورت نہیں ہے",
         "User of PC":"کمپیوٹر کا صارف",
-        "Open a program in PC":"کمپیوٹر میں ایک پروگرام کھولیں"
+        "Open a program in PC":"کمپیوٹر میں ایک پروگرام کھولیں",
+        "Add": "شامل کریں",
+        "Remove": "ہٹائیں",
+        "Open": "کھولیں",
+        "Play": "چلائیں",
+        "Stop": "روکیں",
+        "List": "فہرست"
     },
     "ug_CN":{
         "Home":"باش بەت",
@@ -1141,7 +1447,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS دا يېڭى نەدە؟",
         "Your PC isn't needing to update now":"كومپيۇتېرىڭىزغا ئىناۋەتلىك يېڭىلاش كىرەك ئىمدى",
         "User of PC":"كومپيۇتېر ئىشلەتكۈچىسى",
-        "Open a program in PC":"كومپيۇتېردا دېپىنى ئاچ"
+        "Open a program in PC":"كومپيۇتېردا دېپىنى ئاچ",
+        "Add": "قوشۇش",
+        "Remove": "چىقىرىش",
+        "Open": "ئېچىش",
+        "Play": "ئېلىش",
+        "Stop": "توختىتىش",
+        "List": "تىزىملىك"
     },
     "uz_UZ":{
         "Home":"Bosh sahifa",
@@ -1163,7 +1475,13 @@ langDict = {
         "What new \nin SerOS?":"SerOS-da nima yangi?",
         "Your PC isn't needing to update now":"Sizning kompyuteringiz hozir yangilanishga ehtiyoj emas",
         "User of PC":"Kompyuter foydalanuvchisi",
-        "Open a program in PC":"Kompyuterda dasturni ochish"
+        "Open a program in PC":"Kompyuterda dasturni ochish",
+        "Add": "Qo'shish",
+        "Remove": "Olib tashlash",
+        "Open": "Ochish",
+        "Play": "Ijro etish",
+        "Stop": "To'xtatish",
+        "List": "Ro'yxat"
     },
     "vi_VN":{
         "Home":"Trang chủ",
@@ -1185,6 +1503,12 @@ langDict = {
         "What new \nin SerOS?":"Có gì mới trong SerOS?",
         "Your PC isn't needing to update now":"Máy tính của bạn hiện không cần cập nhật",
         "User of PC":"Người dùng máy tính",
-        "Open a program in PC":"Mở một chương trình trên máy tính"
+        "Open a program in PC":"Mở một chương trình trên máy tính",
+        "Add": "Thêm",
+        "Remove": "Xóa",
+        "Open": "Mở",
+        "Play": "Phát",
+        "Stop": "Dừng",
+        "List": "Danh sách"
     }
 }
