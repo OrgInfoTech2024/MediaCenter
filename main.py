@@ -611,6 +611,8 @@ class MediaCenter(QWidget):
         self.favorites_listbox.hide()
         self.stop_radio_button.hide()
         self.errorLabel.hide()
+        self.radio_channel_input.hide()
+        self.radio_channels_listbox.hide()
 
     # "HIDE SPLASH" FUNCTION
     def hideSplash(self):
@@ -975,4 +977,5 @@ if __name__ == "__main__":
         window.timer.singleShot(1000, window.hideSplash)
 
     window.showFullScreen()
+
     sys.exit(app.exec_())
