@@ -123,12 +123,23 @@ class MediaCenter(QWidget):
         self.radio_button.leaveEvent = self.reset_radio_button
         self.radio_button.clicked.connect(self.radio_page)
         self.radio_button.hide()
-                
+
+        # "PARTY" BUTTON
+        self.party_button = QPushButton(self)
+        self.party_button.setIcon(QIcon('images/buttons/party.png')) 
+        self.party_button.setIconSize(QSize(140, 90))
+        self.party_button.setGeometry(470, 60, 150, 100)
+        self.party_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+        self.party_button.enterEvent = self.select_party_button
+        self.party_button.leaveEvent = self.reset_party_button
+        self.party_button.clicked.connect(self.party_page)
+        self.party_button.hide()
+
         # "TV" BUTTON
         self.tv_button = QPushButton(self)
         self.tv_button.setIcon(QIcon('images/buttons/tv.png'))
         self.tv_button.setIconSize(QSize(140, 90))
-        self.tv_button.setGeometry(470, 60, 150, 100)
+        self.tv_button.setGeometry(625, 60, 150, 100)
         self.tv_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
         self.tv_button.enterEvent = self.select_tv_button
         self.tv_button.leaveEvent = self.reset_tv_button
@@ -333,6 +344,97 @@ class MediaCenter(QWidget):
         self.radio_channels_listbox.addItems(self.radio_chanels)
         self.radio_channels_listbox.doubleClicked.connect(self.double_click_radio)
         self.radio_channels_listbox.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+
+
+        # "PARTY" PAGE ELEMENTS
+        
+        self.party_playlist = []
+        self.currentPartyMedia = 0
+        
+        self.party_listbox = QListWidget(self)
+        party_listbox_to_height_end = self.display_height - 65
+        self.party_listbox.setGeometry(5, 60, 300, party_listbox_to_height_end - 130)
+        self.party_listbox.hide()
+        self.party_listbox.doubleClicked.connect(self.double_click_party_playlist)
+        self.party_listbox.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+        
+        self.party_add_button = QPushButton(self.lang[self.syslang]["Add"], self)
+        self.party_add_button.setGeometry(5, party_listbox_to_height_end - 60, 145, 30)
+        self.party_add_button.clicked.connect(self.add_party_media)
+        self.party_add_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+        self.party_add_button.hide()
+        
+        self.party_remove_button = QPushButton(self.lang[self.syslang]["Remove"], self)
+        self.party_remove_button.setGeometry(160, party_listbox_to_height_end - 60, 145, 30)
+        self.party_remove_button.clicked.connect(self.remove_party_media)
+        self.party_remove_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+        self.party_remove_button.hide()
+
+        self.party_save_button = QPushButton(self.lang[self.syslang]["Save Playlist"], self)
+        self.party_save_button.setGeometry(5, party_listbox_to_height_end - 20, 145, 30)
+        self.party_save_button.clicked.connect(self.save_party_playlist)
+        self.party_save_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+        self.party_save_button.hide()
+
+        self.party_open_button = QPushButton(self.lang[self.syslang]["Open Playlist"], self)
+        self.party_open_button.setGeometry(160, party_listbox_to_height_end - 20, 145, 30)
+        self.party_open_button.clicked.connect(self.open_party_playlist)
+        self.party_open_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px;')
+        self.party_open_button.hide()
+        
+        self.party_mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
+        self.party_videoWidget = QVideoWidget(self)
+        partyVideoWidget_to_width_end = self.display_width - 315
+        partyVideoWidget_to_height_end = self.display_height - 160
+        self.party_videoWidget.setGeometry(310, 60, partyVideoWidget_to_width_end, partyVideoWidget_to_height_end)
+        self.party_videoWidget.hide()
+        self.party_mediaPlayer.setVideoOutput(self.party_videoWidget)
+
+        self.party_playButton = QPushButton(self.lang[self.syslang]["Play"], self)
+        self.party_playButton.setEnabled(False)
+        self.party_playButton.clicked.connect(self.playPartyVideo)
+        self.party_playButton.setGeometry(310, self.display_height - 90, 55, 35)
+        self.party_playButton.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+        self.party_playButton.hide()
+
+        self.party_stopButton = QPushButton(self.lang[self.syslang]["Stop"], self)
+        self.party_stopButton.clicked.connect(self.stopPartyVideo)
+        self.party_stopButton.setGeometry(370, self.display_height - 90, 55, 35)
+        self.party_stopButton.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+        self.party_stopButton.hide()
+
+        self.party_lastMediaButton = QPushButton("<", self)
+        self.party_lastMediaButton.clicked.connect(self.lastPartyMedia)
+        self.party_lastMediaButton.setGeometry(430, self.display_height - 90, 55, 35)
+        self.party_lastMediaButton.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+        self.party_lastMediaButton.hide()
+
+        self.party_nextMediaButton = QPushButton(">", self)
+        self.party_nextMediaButton.clicked.connect(self.nextPartyMedia)
+        self.party_nextMediaButton.setGeometry(490, self.display_height - 90, 55, 35)
+        self.party_nextMediaButton.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+        self.party_nextMediaButton.hide()
+
+        self.party_positionSlider = QSlider(Qt.Horizontal, self)
+        self.party_positionSlider.setRange(0, 0)
+        self.party_positionSlider.sliderMoved.connect(self.setPartyPosition)
+        positionSlider_to_width_height_end = self.display_width - 555
+        self.party_positionSlider.setGeometry(550, self.display_height - 90, positionSlider_to_width_height_end, 35)
+        self.party_positionSlider.hide()
+
+        self.party_timeLabel = QLabel(self)
+        self.party_timeLabel.setGeometry(310, self.display_height - 55, self.display_width - 315, 20)
+        self.party_timeLabel.setStyleSheet('color: white')
+        self.party_timeLabel.hide()
+        
+        # Connect media player signals
+        self.party_mediaPlayer.stateChanged.connect(self.partyMediaStateChanged)
+        self.party_mediaPlayer.positionChanged.connect(self.partyPositionChanged)
+        self.party_mediaPlayer.durationChanged.connect(self.partyDurationChanged)
+        
+        self.partyTimer = QTimer(self)
+        self.partyTimer.timeout.connect(self.updatePartyPlayerTime)
+
 
         self.zoom_scale = 1.0
         self.offset_x = 0
@@ -570,7 +672,15 @@ class MediaCenter(QWidget):
     
     def reset_tv_button(self, event):
         self.tv_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+
+    # "PARTY" SELECT
+    def select_party_button(self, event):
+        self.select_sound_function()
+        self.party_button.setStyleSheet('background-color: #002387; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
     
+    def reset_party_button(self, event):
+        self.party_button.setStyleSheet('background-color: #003153; color: white; border: 2px solid white; border-radius: 5px; padding: 8px;')
+
     # "OPEN GALLERY" FUNCTION
     def open_sound_player(self):
         return
@@ -601,6 +711,7 @@ class MediaCenter(QWidget):
         self.videoWidget.hide()
         self.openButton.hide()
         self.playButton.hide()
+        self.party_button.hide()
         self.positionSlider.hide()
         self.errorLabel.hide()
         self.stopButton.hide()
@@ -613,6 +724,18 @@ class MediaCenter(QWidget):
         self.errorLabel.hide()
         self.radio_channel_input.hide()
         self.radio_channels_listbox.hide()
+        self.party_listbox.hide()
+        self.party_add_button.hide()
+        self.party_remove_button.hide()
+        self.party_save_button.hide()
+        self.party_open_button.hide()
+        self.party_videoWidget.hide()
+        self.party_playButton.hide()
+        self.party_stopButton.hide()
+        self.party_lastMediaButton.hide()
+        self.party_nextMediaButton.hide()
+        self.party_positionSlider.hide()
+        self.party_timeLabel.hide()
 
     # "HIDE SPLASH" FUNCTION
     def hideSplash(self):
@@ -626,6 +749,7 @@ class MediaCenter(QWidget):
         self.favorite_button.show()
         self.player_button.show()
         self.radio_button.show()
+        self.party_button.show()
         #self.tv_button.show()
         self.home_button.show()
         self.minimaze_button.show()
@@ -643,13 +767,25 @@ class MediaCenter(QWidget):
         if hasattr(self, 'label') and self.label.isVisible():
             self.label.hide()
             self.label.clear()
+        if hasattr(self, 'top_overlay'):
+            self.top_overlay.hide()
+            self.top_overlay.deleteLater()
+            del self.top_overlay
+        if hasattr(self, 'bottom_overlay'):
+            self.bottom_overlay.hide()
+            self.bottom_overlay.deleteLater()
+            del self.bottom_overlay
         self.favorite_button.show()
         self.player_button.show()
         self.radio_button.show()
+        self.party_button.show()
+        #self.tv_button.show()
         self.home_button.show()
         self.minimaze_button.show()
         self.exit_button.show()
         self.setStyleSheet('background-color: rgb(0, 49, 83)')
+        self.stopPartyVideo()
+
 
     # "OPEN FAVORITES PAGE" FUNCTION
     def favorites_page(self):
@@ -811,6 +947,7 @@ class MediaCenter(QWidget):
         self.favorite_button.show()
         self.player_button.show()
         self.radio_button.show()
+        self.party_button.show()
         self.home_button.show()
         self.minimaze_button.show()
         self.exit_button.show()
@@ -930,8 +1067,222 @@ class MediaCenter(QWidget):
         
         # SHOWING OF OBJECTS
 
+
+    def party_page(self):
+        self.stopVideo()
+        self.stop_radio()
+        self.hide_all()
+        
+        # SHOWING OF OBJECTS
+        self.party_listbox.show()
+        self.party_add_button.show()
+        self.party_remove_button.show()
+        self.party_save_button.show()
+        self.party_open_button.show()
+        
+        self.party_videoWidget.show()
+        self.party_playButton.show()
+        self.party_stopButton.show()
+        self.party_lastMediaButton.show()
+        self.party_nextMediaButton.show()
+        self.party_positionSlider.show()
+        self.party_timeLabel.show()
+        self.errorLabel.show()
+        
+        self.party_listbox.clear()
+        self.party_listbox.addItems(self.party_playlist)
+
+        self.click_sound_function()
+
+
     
+    def add_party_media(self):
+        self.click_sound_function()
+        
+        # Диалог для выбора файла
+        file_name, _ = QFileDialog.getOpenFileName(self, self.lang[self.syslang].get("Add Media", "Add Media"), "", 
+                                                   "Media Files (*.mp4 *.avi *.mkv *.wav *.mp3 *.jpg *.png *.gif);;All files (*.*)")
+        
+        # Или диалог для ввода URL
+        if not file_name:
+             text, ok = QInputDialog.getText(self, self.lang[self.syslang].get("Add Link", "Add Link"),
+                                             self.lang[self.syslang].get("Enter Media URL:", "Enter Media URL:"))
+             if ok and text:
+                 file_name = text
+        
+        if file_name and file_name not in self.party_playlist:
+            self.party_playlist.append(file_name)
+            self.party_listbox.addItem(file_name)
+            self.party_playButton.setEnabled(True)
+
+    def remove_party_media(self):
+        self.click_sound_function()
+        selected_items = self.party_listbox.selectedItems()
+        if not selected_items:
+            return
+
+        for item in selected_items:
+            text_to_remove = item.text()
+            self.party_playlist.remove(text_to_remove)
+            self.party_listbox.takeItem(self.party_listbox.row(item))
+            
+        if not self.party_playlist:
+            self.party_playButton.setEnabled(False)
+
+    def save_party_playlist(self):
+        self.click_sound_function()
+        
+        if not self.party_playlist:
+            self.errorLabel.setText(self.lang[self.syslang].get("Playlist is empty", "Playlist is empty"))
+            return
+
+        file_name, _ = QFileDialog.getSaveFileName(self, self.lang[self.syslang].get("Save Playlist", "Save Playlist"), 
+                                                   "", "Party Playlist (*.prt)")
+        
+        if file_name:
+            if not file_name.lower().endswith('.prt'):
+                file_name += '.prt'
+            
+            try:
+                with open(file_name, 'w', encoding='utf-8') as f:
+                    for item in self.party_playlist:
+                        f.write(item + '\n')
+                self.errorLabel.setText(self.lang[self.syslang].get("Playlist saved", "Playlist saved") + f": {os.path.basename(file_name)}")
+            except Exception as e:
+                self.errorLabel.setText(self.lang[self.syslang].get("Save error", "Save error") + f": {e}")
+
+    def open_party_playlist(self):
+        self.click_sound_function()
+        
+        file_name, _ = QFileDialog.getOpenFileName(self, self.lang[self.syslang].get("Open Playlist", "Open Playlist"), 
+                                                   "", "Party Playlist (*.prt)")
+        
+        if file_name:
+            try:
+                with open(file_name, 'r', encoding='utf-8') as f:
+                    new_playlist = [line.strip() for line in f if line.strip()]
+                    self.party_playlist = new_playlist
+                    self.party_listbox.clear()
+                    self.party_listbox.addItems(self.party_playlist)
+                    
+                    if self.party_playlist:
+                        self.party_playButton.setEnabled(True)
+                    else:
+                        self.party_playButton.setEnabled(False)
+                        
+                    self.errorLabel.setText(self.lang[self.syslang].get("Playlist loaded", "Playlist loaded") + f": {os.path.basename(file_name)}")
+                    self.stopPartyVideo()
+                    self.currentPartyMedia = 0
+                    
+            except Exception as e:
+                self.errorLabel.setText(self.lang[self.syslang].get("Open error", "Open error") + f": {e}")
+
     
+    def loadPartyMedia(self, path):
+        self.party_mediaPlayer.stop()
+        
+        if path.startswith('http'):
+            # Ссылка
+            self.party_mediaPlayer.setMedia(QMediaContent(QUrl(path)))
+        else:
+            self.party_mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(path)))
+            
+        self.party_playButton.setEnabled(True)
+        self.playPartyVideo()
+        
+        self.party_listbox.setCurrentRow(self.currentPartyMedia)
+
+
+    def playPartyVideo(self):
+        self.click_sound_function()
+        
+        if not self.party_playlist:
+            return
+
+        if self.party_mediaPlayer.mediaStatus() == QMediaPlayer.NoMedia and self.party_playlist:
+            # Если плеер пуст, загружаем текущий файл
+            self.loadPartyMedia(self.party_playlist[self.currentPartyMedia])
+            
+        elif self.party_mediaPlayer.state() == QMediaPlayer.PlayingState:
+            self.party_mediaPlayer.pause()
+            self.party_playButton.setText(self.lang[self.syslang]["Play"])
+            self.partyTimer.stop()
+        else:
+            self.party_mediaPlayer.play()
+            self.party_playButton.setText(self.lang[self.syslang]["Pause"])
+            self.partyTimer.start(1000)
+
+    def stopPartyVideo(self):
+        self.click_sound_function()
+        self.party_mediaPlayer.stop()
+        self.party_mediaPlayer.setMedia(QMediaContent())
+        self.party_playButton.setText(self.lang[self.syslang]["Play"])
+        self.party_positionSlider.setValue(0)
+        self.party_timeLabel.setText("00:00 / 00:00")
+        self.partyTimer.stop()
+
+    def lastPartyMedia(self):
+        self.click_sound_function()
+        if not self.party_playlist:
+            return
+        
+        self.currentPartyMedia = (self.currentPartyMedia - 1) % len(self.party_playlist)
+        self.loadPartyMedia(self.party_playlist[self.currentPartyMedia])
+        
+    def nextPartyMedia(self):
+        self.click_sound_function()
+        if not self.party_playlist:
+            return
+        
+        self.currentPartyMedia = (self.currentPartyMedia + 1) % len(self.party_playlist)
+        self.loadPartyMedia(self.party_playlist[self.currentPartyMedia])
+
+    def double_click_party_playlist(self):
+        self.click_sound_function()
+        if not self.party_listbox.currentItem():
+            return
+            
+        self.currentPartyMedia = self.party_listbox.currentRow()
+        self.loadPartyMedia(self.party_playlist[self.currentPartyMedia])
+        
+    def partyMediaStateChanged(self, state):
+        if state == QMediaPlayer.PlayingState:
+            self.party_playButton.setText(self.lang[self.syslang]["Pause"])
+        else:
+            self.party_playButton.setText(self.lang[self.syslang]["Play"])
+        
+        if state == QMediaPlayer.StoppedState:
+            if self.party_mediaPlayer.position() == 0 and self.party_mediaPlayer.duration() != 0:
+                self.nextPartyMedia()
+
+    def partyPositionChanged(self, position):
+        self.party_positionSlider.setValue(position)
+        self.updatePartyPlayerTime(position)
+        
+    def partyDurationChanged(self, duration):
+        self.party_positionSlider.setRange(0, duration)
+        
+    def setPartyPosition(self, position):
+        self.party_mediaPlayer.setPosition(position)
+
+    def updatePartyPlayerTime(self, position=None):
+        if position is None:
+            position = self.party_mediaPlayer.position()
+        duration = self.party_mediaPlayer.duration()
+        
+        def format_time(ms):
+            seconds = int(ms / 1000)
+            minutes = seconds // 60
+            hours = minutes // 60
+            seconds %= 60
+            minutes %= 60
+            
+            if hours > 0:
+                return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+            return f"{minutes:02d}:{seconds:02d}"
+
+        self.party_timeLabel.setText(f"{format_time(position)} / {format_time(duration)}")
+
     def closeEvent(self, event):
         home_directory = os.path.expanduser("~")
         file_path_favorites = os.path.join(home_directory, '.programdates', 'favorites_media.txt')
@@ -954,28 +1305,27 @@ if __name__ == "__main__":
     window = MediaCenter()
 
     if len(sys.argv) > 1:
-        window.setStyleSheet("background-color: rgb(0, 49, 83);")
-        file_path = sys.argv[1]
-        window.openFile(file_path)
+        if sys.argv[1] != '':
+            window.setStyleSheet("background-color: rgb(0, 49, 83);")
+            file_path = sys.argv[1]
+            window.openFile(file_path)
 
-        window.home_button.show()
-        window.minimaze_button.show()
-        window.exit_button.show()
-        window.openButton.show()
-        window.playButton.show()
-        window.positionSlider.show()
-        window.stopButton.show()
-        window.timeLabel.show()
-        window.errorLabel.show()
-        window.lastMediaButton.show()
-        window.nextMediaButton.show()
-
-    else:
-        window.splash_label.show()
-        window.startup_sound.play()
-        window.splash_movie.start()
-        window.timer.singleShot(1000, window.hideSplash)
+            window.home_button.show()
+            window.minimaze_button.show()
+            window.exit_button.show()
+            window.openButton.show()
+            window.playButton.show()
+            window.positionSlider.show()
+            window.stopButton.show()
+            window.timeLabel.show()
+            window.errorLabel.show()
+            window.lastMediaButton.show()
+            window.nextMediaButton.show()
+        else:
+            window.splash_label.show()
+            window.startup_sound.play()
+            window.splash_movie.start()
+            window.timer.singleShot(1000, window.hideSplash)
 
     window.showFullScreen()
-
     sys.exit(app.exec_())
