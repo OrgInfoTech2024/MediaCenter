@@ -1099,11 +1099,9 @@ class MediaCenter(QWidget):
     def add_party_media(self):
         self.click_sound_function()
         
-        # Диалог для выбора файла
         file_name, _ = QFileDialog.getOpenFileName(self, self.lang[self.syslang].get("Add Media", "Add Media"), "", 
                                                    "Media Files (*.mp4 *.avi *.mkv *.wav *.mp3 *.jpg *.png *.gif);;All files (*.*)")
         
-        # Или диалог для ввода URL
         if not file_name:
              text, ok = QInputDialog.getText(self, self.lang[self.syslang].get("Add Link", "Add Link"),
                                              self.lang[self.syslang].get("Enter Media URL:", "Enter Media URL:"))
@@ -1182,7 +1180,6 @@ class MediaCenter(QWidget):
         self.party_mediaPlayer.stop()
         
         if path.startswith('http'):
-            # Ссылка
             self.party_mediaPlayer.setMedia(QMediaContent(QUrl(path)))
         else:
             self.party_mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(path)))
@@ -1200,7 +1197,6 @@ class MediaCenter(QWidget):
             return
 
         if self.party_mediaPlayer.mediaStatus() == QMediaPlayer.NoMedia and self.party_playlist:
-            # Если плеер пуст, загружаем текущий файл
             self.loadPartyMedia(self.party_playlist[self.currentPartyMedia])
             
         elif self.party_mediaPlayer.state() == QMediaPlayer.PlayingState:
@@ -1329,3 +1325,4 @@ if __name__ == "__main__":
 
     window.showFullScreen()
     sys.exit(app.exec_())
+
